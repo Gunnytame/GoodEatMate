@@ -63,11 +63,6 @@ function Books({user}){
     function changView(e){
         setRenderIndex(parseInt(e.target.id))
     }
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setRecipe({ ...recipe, [name]: value });
-      };
       
     return (
         user !== null ?

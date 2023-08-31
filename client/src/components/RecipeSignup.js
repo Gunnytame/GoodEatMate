@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function YourComponent({user}) {
 
-    const [form, setform] = useState({
+    const [form, setForm] = useState({
         name: "",
         image: "",
         ingredients: "",
@@ -46,7 +46,7 @@ function YourComponent({user}) {
 
     function uploadImage (files){
         useEffect
-        setform({...form, image: files[0]})
+        setForm({...form, image: files[0]})
     }
 
     return (
